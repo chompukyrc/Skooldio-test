@@ -21,13 +21,13 @@ function App() {
     };
 
     return (
-        <>
+        <div className="space">
             {tcasData.map((data, idx) => (
                 <UniversityCard key={idx} {...data} />
             ))}
 
             {/* <pre>{JSON.stringify(tcasData, null, 2)}</pre> */}
-        </>
+        </div>
     );
 }
 

@@ -1,4 +1,94 @@
 .card {
-    background-color: aquamarine;
+    width: 20rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    color: black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.tcas-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.faculty-name {
+    color: #e7615c;
+    font-size: 14px;
+}
+
+.name {
+    color: #9c9c9c;
+    font-size: 10px;
+}
+
+.font-medium {
+    color: #9c9c9c;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.heart-icon {
+    right: 0;
+}
+
+hr {
+    color: #9c9c9c;
+    opacity: 20%;
+}
+
+.seat {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.seat-open {
+    margin-right: 0.5rem;
+}
+
+.no-seat {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #d8d8d8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.have-seat {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #67c979;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hor-divider {
+    width: 1px;
+    height: 2rem;
+    background-color: #9c9c9c;
+    opacity: 20%;
+    margin: 4px;
+}
+
+.score {
+    text-align: center;
+}
+
+.between {
+    justify-content: space-between;
 }
 
