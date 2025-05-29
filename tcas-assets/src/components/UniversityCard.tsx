@@ -19,7 +19,17 @@ export default function UniversityCard(data: IUniversityData) {
                         {data.faculty.university.name}
                     </p>
                 </div>
-                <div className="heart-icon">heart</div>
+                <div className="heart-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="red"
+                    >
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </div>
             </div>
 
             {/* Divider */}
@@ -40,13 +50,19 @@ export default function UniversityCard(data: IUniversityData) {
                     )
                 )}
             </div>
-            {/* 3 */}
-            <div></div>
-            {/* 4 - Your score */}
-            <div className="font-medium">
-                <p>คะแนนของคุณคือ</p>
-                {data.score?.id ? data.score.id : "-"}
+
+            {/* 3 - Admission*/}
+            <div className="flex between font-medium admission">
+                <div className="admission-name">รอบที่ 4 Admission</div>
+                <button className="edit-score-button">แก้ไขคะแนน</button>
             </div>
+
+            {/* 4 - Your score */}
+            <div className="justify-end">
+                <div className="font-medium">คะแนนของคุณคือ</div>
+                <div>{data.score?.id ? data.score.id : "-"}</div>
+            </div>
+
             {/* 5 - Score */}
             <div className="flex font-medium between">
                 <div className="score">
