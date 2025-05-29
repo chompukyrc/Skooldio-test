@@ -6,8 +6,8 @@
         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
     color: black;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 16px;
+    padding: 16px;
 }
 
 .flex {
@@ -22,17 +22,17 @@
 
 .faculty-name {
     color: #e7615c;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .name {
     color: #9c9c9c;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .font-medium {
     color: #9c9c9c;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -51,7 +51,7 @@ hr {
 }
 
 .seat-open {
-    margin-right: 0.5rem;
+    margin-right: 16px;
 }
 
 .no-seat {
@@ -105,11 +105,11 @@ hr {
     border-width: 1px;
     border-color: #e7615c;
     text-align: center;
-    font-size: 10px;
-    padding: 2px;
+    font-size: 12px;
+    padding: 0px;
     width: 60px;
     cursor: pointer;
-    margin: 1px;
+    font-family: "Athiti", sans-serif;
 }
 
 .admission {
