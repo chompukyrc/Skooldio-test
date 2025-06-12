@@ -1,12 +1,8 @@
+@import "tailwindcss";
+
 #root {
-    /* max-width: 1280px; */
     margin: 0 auto;
     padding: 2rem;
     font-family: "Athiti", sans-serif;
-}
-
-.space {
-    display: flex;
-    flex-wrap: wrap;
 }
 

@@ -1,10 +1,10 @@
-export interface IUniversityData {
+export interface IDepartmentData {
     id: string;
     name: string;
     logo: string;
     roundSeats: number[];
-    score: IScore;
-    faculty: IFaculty;
+    score: Score | null;
+    faculty: Faculty;
     updatedAt: string;
     likes: number;
 }
@@ -13,7 +13,7 @@ interface IFaculty {
     id: string;
     name: string;
     tagId: string;
-    university: IUniversity;
+    university: University;
 }
 
 interface IUniversity {
@@ -21,7 +21,7 @@ interface IUniversity {
     name: string;
 }
 
-interface IScore {
+export interface IScore {
     id: string;
     year: number;
     scoreType: string;

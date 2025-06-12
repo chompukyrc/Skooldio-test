@@ -1,14 +1,14 @@
 import "./App.css";
-import UniversityCard from "./components/UniversityCard";
+import DepartmentCard from "./components/DepartmentCard";
 import { useEffect, useState } from "react";
-import type { IUniversityData } from "./interfaces";
+import type { IDepartmentData } from "./interfaces";
 
 function App() {
     useEffect(() => {
         fetchTcasData();
     }, []);
 
-    const [tcasData, setTcasData] = useState<IUniversityData[]>([]);
+    const [tcasData, setTcasData] = useState<IDepartmentData[]>([]);
 
     const fetchTcasData = async () => {
         const response = await fetch(
@@ -21,12 +21,10 @@ function App() {
     };
 
     return (
-        <div className="space">
-            {tcasData.map((data, idx) => (
-                <UniversityCard key={idx} {...data} />
+        <div className=" flex flex-wrap">
+            {tcasData.map((data) => (
+                <DepartmentCard key={data.id} {...data} />
             ))}
-
-            {/* <pre>{JSON.stringify(tcasData, null, 2)}</pre> */}
         </div>
     );
 }
